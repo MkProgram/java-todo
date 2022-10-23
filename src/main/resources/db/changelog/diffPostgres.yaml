@@ -1,0 +1,17 @@
+databaseChangeLog:
+- changeSet:
+    id: 1666537652787-1
+    author: Marian (generated)
+    changes:
+    - createSequence:
+        incrementBy: 1
+        sequenceName: hibernate_sequence
+        startValue: 1
+- changeSet:
+    id: 1666537652787-2
+    author: Marian (generated)
+    changes:
+    - dropColumn:
+        columnName: priority
+        tableName: task
+

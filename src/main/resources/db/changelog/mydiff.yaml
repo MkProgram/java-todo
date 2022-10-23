@@ -10,7 +10,7 @@ databaseChangeLog:
             constraints:
               nullable: false
               primaryKey: true
-              primaryKeyName: TaskPK
+              primaryKeyName: taskPK
             name: id
             type: INT
         - column:
@@ -22,7 +22,7 @@ databaseChangeLog:
         - column:
             name: title
             type: VARCHAR(255)
-        tableName: Task
+        tableName: task
 - changeSet:
     id: 1665785217928-2
     author: Marian (generated)

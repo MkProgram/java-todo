@@ -16,3 +16,7 @@ databaseChangeLog:
       file: src/main/resources/db/changelog/mydiff.yaml
   - include:
       file: src/main/resources/db/changelog/nextdiff.yaml
+  - include:
+      file: src/main/resources/db/changelog/diffPostgres.yaml
+  - include:
+      file: src/main/resources/db/changelog/diffPostgres-2.yaml
