@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 1665785841657-1
+    author: Marian (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: priority
+            type: integer
+        tableName: Task
+

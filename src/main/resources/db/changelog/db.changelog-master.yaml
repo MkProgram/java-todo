@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Liquibase
+      changes:
+        - createTable:
+            tableName: test_table
+            columns:
+              - column:
+                  name: test_column
+                  type: int
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+  - include:
+      file: src/main/resources/db/changelog/mydiff.yaml
+  - include:
+      file: src/main/resources/db/changelog/nextdiff.yaml

@@ -1,0 +1,32 @@
+databaseChangeLog:
+- changeSet:
+    id: 1665785217928-1
+    author: Marian (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: TaskPK
+            name: id
+            type: INT
+        - column:
+            name: completed
+            type: BIT
+        - column:
+            name: description
+            type: VARCHAR(255)
+        - column:
+            name: title
+            type: VARCHAR(255)
+        tableName: Task
+- changeSet:
+    id: 1665785217928-2
+    author: Marian (generated)
+    changes:
+    - dropTable:
+        tableName: test_table
+
